@@ -1,5 +1,5 @@
 resource "google_storage_bucket" "website-frontend" {
-  name     = "theo-tanase-website-frontend"
+  name     = "${var.project-name}-website-frontend"
   project  = var.project_id
   location = var.region
 
