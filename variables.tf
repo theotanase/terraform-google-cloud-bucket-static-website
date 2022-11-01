@@ -13,7 +13,7 @@ variable "zone" {
   description = "(Required) The GCP project's zone."
 }
 
-variable "project-name" {
+variable "project_name" {
   type        = string
   description = "(Required) Project readable name user for naming resources"
 }

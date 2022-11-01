@@ -1,5 +1,5 @@
 resource "google_compute_network" "default" {
-  name                    = var.project-name
+  name                    = var.project_name
   auto_create_subnetworks = true
   project                 = var.project_id
 
@@ -10,6 +10,6 @@ resource "google_compute_network" "default" {
 
 # reserved IP address
 resource "google_compute_global_address" "default" {
-  name    = "${var.project-name}-static-ip"
+  name    = "${var.project_name}-static-ip"
   project = var.project_id
 }
